@@ -19,7 +19,7 @@ while True:
     ret, test_img = cap.read()
     if not ret:
         continue
-    gray_img = cv2.cvtColor(test_img, cv2.COLOR_BGR2RGB)
+    gray_img = cv2.cvtColor(test_img, cv2.COLOR_BGR2GRAY)
 
     faces_detected = face_haar_cascade.detectMultiScale(gray_img, 1.32, 5)
 
